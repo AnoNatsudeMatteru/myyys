@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /*nav{max-width:1920px;min-width:1280px;width:100%;height:60px;position:absolute;top:0;left:0;z-index:50}.nav.fixed{position:fixed;top:0}.nav.fixed .sub_nav_down{opacity:1;filter:alpha(opacity=100);-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.nav.showNav{opacity:1;filter:alpha(opacity=100);-webkit-transition:all .5s linear;-moz-transition:all .5s linear;-ms-transition:all .5s linear;transition:all .5s linear}.nav.hideNav{-webkit-transition:all .5s linear;-moz-transition:all .5s linear;-ms-transition:all .5s linear;transition:all .5s linear}*/
+    .top_nav{
+      width:100%;
+      background:url(./nav_back_bg_fd2505e.jpg) center top no-repeat;
+      height:60px;
+      position:absolute;
+      right:0;top:0
+    }
+    .top_nav .top_nav_wrap{
+      display:flex;
+      width:1180px;
+      margin:0 auto
+    }
+    .top_nav .top_nav_wrap a{
+      position:relative;
+      display:block;
+      width:118px;
+      height:65px;
+      line-height:60px;
+      font-size:14px;
+      color:#fff;
+      text-align:center;
+      padding-bottom:5px;
+      transition:all .3s ease;
+
+    }
+    .top_nav .top_nav_wrap a:after{
+      content:'';
+      display:block;
+      position:absolute;
+      top:24px;
+      right:-1px;
+      width:1px;
+      height:10px;
+      background:#fff
+    }
+    .top_nav .top_nav_wrap a.active,.top_nav .top_nav_wrap a:hover{
+      color:#000;
+      background:url(./nav_bg1_d44f09d.jpg) 0 0 no-repeat
+    }
+    .top_nav .top_nav_wrap a.active:after,.top_nav .top_nav_wrap a:hover:after{
+      right:0;
+      opacity:0;
+      filter:alpha(opacity=0)
+    }
+  </style>
+</head>
+<body>
+<div class="top_nav">
+  <nav class="top_nav_wrap">
+    <a href="//yys.163.com/index.html" target="_blank" title="官网首页" class="active">官网首页</a>
+    <a href="//yys.163.com/news/index.html" target="_blank" title="新闻资讯" class="nav_item">新闻资讯</a>
+    <a href="//yys.163.com/shishen/index.html" target="_blank" title="式神录" class="nav_item">式神录</a>
+    <a href="//yys.163.com/skill/index.html" target="_blank" title="游戏攻略" class="nav_item">游戏攻略</a>
+    <a href="//tuku.yys.163.com/s/index.html" target="_blank" title="同人社区" class="nav_item">同人社区</a>
+    <a href="//yys.163.com/btyy/" target="_blank" title="泛娱乐" class="nav_item">泛娱乐</a>
+    <a href="//yys.163.com/media/" target="_blank" title="视听中心" class="nav_item">视听中心</a>
+    <a href="//gift.163.com/index_yys.html" target="_blank" title="周边商城">周边商城</a>
+    <a href="//yys.cbg.163.com/" target="_blank" title="藏宝阁">藏宝阁</a>
+    <a href="javascript:;" title="官方渠道" class="nav_item">官方渠道</a>
+  </nav>
+ </body>
+</html>
